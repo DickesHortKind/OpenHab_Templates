@@ -1,0 +1,17 @@
+//
+//
+//Number WZ_Temperature_Alexa 	"Wohnzimmer"						(Alexa)	[ "CurrentTemperature" ] 	
+Switch TestSprich		"Sprich!"					
+//Number Bad_Temperature_Alexa 	"Bad"			 					(Alexa)	[ "CurrentTemperature" ]	{ channel="mihome:sensor_ht:158d000159c1f8:temperature" }
+//Number SZ_Temperature_Alexa 	"Schlafzimmer"						(Alexa)	[ "CurrentTemperature" ]	{ channel="mihome:sensor_ht:158d0001573a1e:temperature" }
+//Number Temp_WZ_akt_Alexa      	"Heizkörper"     					(Alexa) [ "CurrentTemperature" ] 	{channel="homematic:HG-HM-CC-RT-DN:549f0801:OEQ0658815:4#ACTUAL_TEMPERATURE" }
+
+
+Number TestTemperaturSonoff 	"Temperatur [%.1f °C]" 	<icons8temperatur> (Save)
+Number TestLuftfeuchteSonoff 	"Luft [%.1f %%]"  <icons8temperatur>
+String Temperature_TempSummary 	"Innen-/Außentemperatur [%s]"  <icons8temperatur>  
+
+//Picker
+Group gTimepicker   (All)
+String TransferItem "[%s]"      (gTimepicker)
+
