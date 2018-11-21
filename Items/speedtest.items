@@ -1,9 +1,0 @@
-Group gSpeedtest <"network-icon"> (Whg)
-
-String      SpeedtestSummary        "Speedtest [%s]"             <"speedtest_network">       (gSpeedtest,Grafana,Save)
-Number      SpeedtestResultPing     "Ping [%.3f ms]"             <"speedtest_next5">         (gSpeedtest,Grafana,Save)
-Number      SpeedtestResultDown     "Downlink [%.2f Mbit/s]"     <"speedtest_download">      (gSpeedtest,Grafana,Save)
-Number      SpeedtestResultUp       "Uplink [%.2f Mbit/s]"       <"speedtest_upload">        (gSpeedtest,Grafana,Save)
-String      SpeedtestRunning        "Speedtest running ... [%s]" <"speedtest_new">           (gSpeedtest,Grafana,Save)
-Switch      SpeedtestRerun          "Start manually"             <"speedtest_reload2">       (gSpeedtest,Grafana,Save)
-DateTime    SpeedtestResultDate     "Last executed [%1$td.%1$tm.%1$tY, %1$tH:%1$tM Uhr]"   <"speedtest_problem4">      (gSpeedtest,Grafana,Save)
